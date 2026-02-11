@@ -414,7 +414,7 @@ class CategoryBoard{
     }
 
     /**
-     * Avito-style category tree (3 levels)
+     * Avito-style category navigation (left sidebar + right detail panel)
      * L1: Root categories — bold 18px
      * L2: Subcategories — regular 16px
      * L3: Deep subcategories — gray 14px
@@ -422,108 +422,94 @@ class CategoryBoard{
     function outAvitoCatalog( $getCategories = [], $currentCatId = 0 ){
 
       $ULang = new ULang();
-      $return = '';
 
-      if( !isset($getCategories["category_board_id_parent"][0]) ){
+      if( !isset($getCategories["category_board_id_parent"][0]) || !count($getCategories["category_board_id_parent"][0]) ){
           return '';
       }
 
-      $return .= '<div class="avito-categories">';
-
-      // L1 — Root categories (parent_id = 0)
-      foreach( $getCategories["category_board_id_parent"][0] as $l1 ){
-
-          $l1Id    = $l1["category_board_id"];
-          $l1Name  = $ULang->t( $l1["category_board_name"], [ "table" => "uni_category_board", "field" => "category_board_name" ] );
-          $l1Link  = $this->alias( $l1["category_board_chain"] );
-          $l1Count = $this->getCountAd( $l1Id );
-          $hasChildren = isset( $getCategories["category_board_id_parent"][$l1Id] );
-          $isActive = false;
-
-          // Check if current category belongs to this L1 branch
-          if( $currentCatId ){
-              $reverseIds = explode(',', $this->reverseId( $getCategories, $currentCatId ));
-              if( in_array($l1Id, $reverseIds) ){
-                  $isActive = true;
+      $activeL1Id = 0;
+      if( $currentCatId ){
+          $reverseIds = explode(',', $this->reverseId( $getCategories, $currentCatId ));
+          foreach( $reverseIds as $reverseId ){
+              if( isset($getCategories["category_board_id"][$reverseId]) && !$getCategories["category_board_id"][$reverseId]["category_board_id_parent"] ){
+                  $activeL1Id = (int)$reverseId;
+                  break;
               }
           }
+      }
 
-          $openClass = $isActive ? ' avito-cat-open' : '';
+      if( !$activeL1Id ){
+          $activeL1Id = (int)$getCategories["category_board_id_parent"][0][0]["category_board_id"];
+      }
 
-          $return .= '<div class="avito-cat-l1-wrap' . $openClass . '">';
-          $return .= '<div class="avito-cat-l1">';
-          $return .= '<a href="' . $l1Link . '">' . $l1Name . '</a>';
+      $return = '';
+      $return .= '<div class="avito-categories avito-categories-mega">';
+      $return .= '<div class="avito-categories-sidebar">';
+
+      foreach( $getCategories["category_board_id_parent"][0] as $l1 ){
+
+          $l1Id    = (int)$l1["category_board_id"];
+          $l1Name  = $ULang->t( $l1["category_board_name"], [ "table" => "uni_category_board", "field" => "category_board_name" ] );
+          $l1Count = $this->getCountAd( $l1Id );
+          $isActiveClass = $activeL1Id === $l1Id ? ' active' : '';
+
+          $return .= '<button type="button" class="avito-cat-l1-tab' . $isActiveClass . '" data-avito-tab="' . $l1Id . '">';
+          $return .= '<span class="avito-cat-l1-name">' . $l1Name . '</span>';
           if( $l1Count ){ $return .= '<span class="avito-cat-count">' . $l1Count . '</span>'; }
-          if( $hasChildren ){
-              $return .= '<span class="avito-cat-toggle"><i class="las la-angle-down"></i></span>';
-          }
-          $return .= '</div>';
+          $return .= '<i class="las la-angle-right"></i>';
+          $return .= '</button>';
+      }
 
-          // L2 — Subcategories
-          if( $hasChildren ){
-              $return .= '<div class="avito-cat-l2-list"' . ($isActive ? '' : ' style="display:none;"') . '>';
+      $return .= '</div>';
+      $return .= '<div class="avito-categories-content">';
 
+      foreach( $getCategories["category_board_id_parent"][0] as $l1 ){
+
+          $l1Id   = (int)$l1["category_board_id"];
+          $l1Name = $ULang->t( $l1["category_board_name"], [ "table" => "uni_category_board", "field" => "category_board_name" ] );
+          $paneActive = $activeL1Id === $l1Id ? ' active' : '';
+
+          $return .= '<div class="avito-cat-pane' . $paneActive . '" data-avito-pane="' . $l1Id . '">';
+          $return .= '<div class="avito-cat-pane-title">' . $l1Name . '</div>';
+          $return .= '<div class="avito-cat-grid">';
+
+          if( isset($getCategories["category_board_id_parent"][$l1Id]) ){
               foreach( $getCategories["category_board_id_parent"][$l1Id] as $l2 ){
 
-                  $l2Id    = $l2["category_board_id"];
+                  $l2Id    = (int)$l2["category_board_id"];
                   $l2Name  = $ULang->t( $l2["category_board_name"], [ "table" => "uni_category_board", "field" => "category_board_name" ] );
                   $l2Link  = $this->alias( $l2["category_board_chain"] );
                   $l2Count = $this->getCountAd( $l2Id );
-                  $hasL3   = isset( $getCategories["category_board_id_parent"][$l2Id] );
-                  $isL2Active = false;
 
-                  if( $currentCatId ){
-                      $reverseIds2 = explode(',', $this->reverseId( $getCategories, $currentCatId ));
-                      if( in_array($l2Id, $reverseIds2) ){
-                          $isL2Active = true;
-                      }
-                  }
-
-                  $openL2Class = $isL2Active ? ' avito-cat-open' : '';
-
-                  $return .= '<div class="avito-cat-l2-wrap' . $openL2Class . '">';
-                  $return .= '<div class="avito-cat-l2">';
-                  $return .= '<a href="' . $l2Link . '">' . $l2Name . '</a>';
+                  $return .= '<div class="avito-cat-col">';
+                  $return .= '<a class="avito-cat-l2-link" href="' . $l2Link . '">' . $l2Name;
                   if( $l2Count ){ $return .= '<span class="avito-cat-count">' . $l2Count . '</span>'; }
-                  if( $hasL3 ){
-                      $return .= '<span class="avito-cat-toggle"><i class="las la-angle-down"></i></span>';
-                  }
-                  $return .= '</div>';
+                  $return .= '</a>';
 
-                  // L3 — Deep subcategories
-                  if( $hasL3 ){
-                      $return .= '<div class="avito-cat-l3-list"' . ($isL2Active ? '' : ' style="display:none;"') . '>';
-
+                  if( isset($getCategories["category_board_id_parent"][$l2Id]) ){
+                      $return .= '<div class="avito-cat-l3-list">';
                       foreach( $getCategories["category_board_id_parent"][$l2Id] as $l3 ){
+                          $l3Id   = (int)$l3["category_board_id"];
+                          $l3Name = $ULang->t( $l3["category_board_name"], [ "table" => "uni_category_board", "field" => "category_board_name" ] );
+                          $l3Link = $this->alias( $l3["category_board_chain"] );
+                          $activeL3 = $currentCatId == $l3Id ? ' avito-cat-active' : '';
 
-                          $l3Id    = $l3["category_board_id"];
-                          $l3Name  = $ULang->t( $l3["category_board_name"], [ "table" => "uni_category_board", "field" => "category_board_name" ] );
-                          $l3Link  = $this->alias( $l3["category_board_chain"] );
-                          $l3Count = $this->getCountAd( $l3Id );
-                          $isL3Active = ( $currentCatId == $l3Id ) ? ' avito-cat-active' : '';
-
-                          $return .= '<div class="avito-cat-l3' . $isL3Active . '">';
-                          $return .= '<a href="' . $l3Link . '">' . $l3Name . '</a>';
-                          if( $l3Count ){ $return .= '<span class="avito-cat-count">' . $l3Count . '</span>'; }
-                          $return .= '</div>';
-
+                          $return .= '<a class="avito-cat-l3-link' . $activeL3 . '" href="' . $l3Link . '">' . $l3Name . '</a>';
                       }
-
-                      $return .= '</div>'; // .avito-cat-l3-list
+                      $return .= '</div>';
                   }
 
-                  $return .= '</div>'; // .avito-cat-l2-wrap
-
+                  $return .= '</div>';
               }
-
-              $return .= '</div>'; // .avito-cat-l2-list
           }
 
-          $return .= '</div>'; // .avito-cat-l1-wrap
+          $return .= '</div>';
+          $return .= '</div>';
 
       }
 
-      $return .= '</div>'; // .avito-categories
+      $return .= '</div>';
+      $return .= '</div>';
 
       return $return;
 
