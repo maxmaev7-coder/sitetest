@@ -12561,156 +12561,149 @@ figure table {
     display: none;
 }
 
-/* ===== Avito-Style Category Navigation ===== */
-.avito-categories {
+/* ===== Avito-style categories (desktop like Avito) ===== */
+.avito-categories-mega {
+    display: flex;
+    background: #fff;
+    border: 1px solid #eceef2;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.avito-categories-sidebar {
+    width: 320px;
+    background: #fafbfc;
+    border-right: 1px solid #eceef2;
+    padding: 12px;
+}
+
+.avito-cat-l1-tab {
     width: 100%;
-}
-
-/* L1 — Root categories */
-.avito-cat-l1-wrap {
-    border-bottom: 1px solid #f2f2f2;
-}
-
-.avito-cat-l1-wrap:last-child {
-    border-bottom: none;
-}
-
-.avito-cat-l1 {
+    border: 0;
+    background: transparent;
     display: flex;
     align-items: center;
-    padding: 12px 0;
+    gap: 8px;
+    text-align: left;
+    padding: 12px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 4px;
 }
 
-.avito-cat-l1>a {
+.avito-cat-l1-tab:hover,
+.avito-cat-l1-tab.active {
+    background: #f0f4ff;
+}
+
+.avito-cat-l1-name {
     font-size: 18px;
     font-weight: 700;
-    color: #1a1a1a;
-    text-decoration: none;
-    flex-grow: 1;
-    transition: color 0.15s ease;
+    color: #1f2937;
+    flex: 1;
 }
 
-.avito-cat-l1>a:hover {
-    color: #6B6FFF;
-    text-decoration: none;
-}
-
-/* L2 — Subcategories */
-.avito-cat-l2-list {
-    padding-bottom: 8px;
-}
-
-.avito-cat-l2 {
-    display: flex;
-    align-items: center;
-    padding: 6px 0 6px 24px;
-}
-
-.avito-cat-l2>a {
+.avito-cat-l1-tab .la-angle-right {
+    color: #9ca3af;
     font-size: 16px;
-    font-weight: 400;
-    color: #333333;
-    text-decoration: none;
-    flex-grow: 1;
-    transition: color 0.15s ease;
 }
 
-.avito-cat-l2>a:hover {
-    color: #6B6FFF;
+.avito-cat-count {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.avito-categories-content {
+    flex: 1;
+    padding: 24px;
+    min-height: 420px;
+}
+
+.avito-cat-pane {
+    display: none;
+}
+
+.avito-cat-pane.active {
+    display: block;
+}
+
+.avito-cat-pane-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 18px;
+}
+
+.avito-cat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    gap: 20px 28px;
+}
+
+.avito-cat-l2-link {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.avito-cat-l2-link:hover {
+    color: #2563eb;
     text-decoration: none;
 }
 
-/* L3 — Deep subcategories */
 .avito-cat-l3-list {
-    padding-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
-.avito-cat-l3 {
-    padding: 4px 0 4px 48px;
-}
-
-.avito-cat-l3>a {
+.avito-cat-l3-link {
     font-size: 14px;
     font-weight: 400;
-    color: #888888;
+    color: #6b7280;
+    line-height: 1.35;
+}
+
+.avito-cat-l3-link:hover,
+.avito-cat-l3-link.avito-cat-active {
+    color: #2563eb;
     text-decoration: none;
-    transition: color 0.15s ease;
 }
 
-.avito-cat-l3>a:hover {
-    color: #6B6FFF;
-    text-decoration: none;
+@media (max-width: 991px) {
+    .avito-categories-mega {
+        flex-direction: column;
+    }
+
+    .avito-categories-sidebar {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #eceef2;
+    }
+
+    .avito-categories-content {
+        min-height: 0;
+        padding: 16px;
+    }
+
+    .avito-cat-pane-title {
+        font-size: 24px;
+    }
+
+    .avito-cat-grid {
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
+        gap: 14px 16px;
+    }
 }
 
-.avito-cat-l3.avito-cat-active>a {
-    color: #1a1a1a;
-    font-weight: 600;
-}
-
-/* Count badge */
-.avito-cat-count {
-    font-size: 13px;
-    color: #999999;
-    margin-left: 8px;
-    flex-shrink: 0;
-}
-
-/* Toggle arrow */
-.avito-cat-toggle {
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    margin-left: 8px;
-    flex-shrink: 0;
-    transition: background-color 0.15s ease;
-}
-
-.avito-cat-toggle:hover {
-    background-color: #f2f2f2;
-}
-
-.avito-cat-toggle i {
-    font-size: 16px;
-    color: #999999;
-    transition: transform 0.25s ease;
-}
-
-/* Open state: rotate arrow */
-.avito-cat-open>.avito-cat-l1>.avito-cat-toggle i,
-.avito-cat-open>.avito-cat-l2>.avito-cat-toggle i {
-    transform: rotate(180deg);
-}
-
-/* Slide animation helper */
-.avito-cat-l2-list,
-.avito-cat-l3-list {
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-
-/* Mobile responsive */
 @media (max-width: 575px) {
-    .avito-cat-l1>a {
+    .avito-cat-l1-name {
         font-size: 16px;
     }
 
-    .avito-cat-l2 {
-        padding-left: 16px;
-    }
-
-    .avito-cat-l2>a {
-        font-size: 15px;
-    }
-
-    .avito-cat-l3 {
-        padding-left: 32px;
-    }
-
-    .avito-cat-l3>a {
-        font-size: 13px;
+    .avito-cat-grid {
+        grid-template-columns: 1fr;
     }
 }
