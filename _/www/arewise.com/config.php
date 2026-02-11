@@ -1,8 +1,16 @@
 <?php
 
+if (!function_exists('configEnv')) {
+   function configEnv($name, $default = null)
+   {
+      $value = getenv($name);
+      return $value !== false ? $value : $default;
+   }
+}
+
 return [
    "display_errors" => false,
-   "https" => false,
+   "https" => (bool) configEnv('APP_HTTPS', false),
    "private_hash" => "254e2b6c4dd20e64538e2d52cc0444f8",
    "private_hex" => "410eaa015d5f6b11295ac301919b2498",
    "feed_ads_key" => "4818653809",
@@ -11,7 +19,7 @@ return [
    "folder_admin" => "cp_67250002f1e79",
    "basePath" => __dir__,
    "urlPrefix" => "/",
-   "urlPath" => "https://arewise.ru/",
+   "urlPath" => configEnv('APP_URL', "https://arewise.ru/"),
    "key_rand" => mt_rand(10000000, 99999999),
    "create_mode" => 0777,
    "template_path" => __dir__."/templates",
@@ -26,12 +34,12 @@ return [
    ],
 
    "db" => [
-     "port" => "",
-     "host" => "localhost",
-     "database" => "u2946871_testdbtoverum",
-     "user" => "u2946871_testdbt",
-     "pass" => "testdbtoverum111",
-     "charset" => "utf8",
+     "port" => configEnv('DB_PORT', ""),
+     "host" => configEnv('DB_HOST', "localhost"),
+     "database" => configEnv('DB_DATABASE', "u2946871_testdbtoverum"),
+     "user" => configEnv('DB_USERNAME', "u2946871_testdbt"),
+     "pass" => configEnv('DB_PASSWORD', "testdbtoverum111"),
+     "charset" => configEnv('DB_CHARSET', "utf8"),
    ],
 
    "number_format" => [
