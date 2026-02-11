@@ -1256,14 +1256,20 @@ $(document).ready(function () {
 
    });
 
-   /* Avito-style category tree: expand/collapse */
-   $(document).on('click', '.avito-cat-toggle', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      var wrap = $(this).closest('.avito-cat-l1-wrap, .avito-cat-l2-wrap');
-      var list = wrap.children('.avito-cat-l2-list, .avito-cat-l3-list');
-      wrap.toggleClass('avito-cat-open');
-      list.slideToggle(250);
+   /* Avito-style category tabs (left menu -> right panel) */
+   $(document).on('mouseenter click', '.avito-cat-l1-tab', function(e) {
+      if(e.type === 'click'){
+         e.preventDefault();
+      }
+
+      var tabId = $(this).data('avito-tab');
+      var wrap = $(this).closest('.avito-categories-mega');
+
+      wrap.find('.avito-cat-l1-tab').removeClass('active');
+      $(this).addClass('active');
+
+      wrap.find('.avito-cat-pane').removeClass('active');
+      wrap.find('.avito-cat-pane[data-avito-pane="' + tabId + '"]').addClass('active');
    });
 
 
