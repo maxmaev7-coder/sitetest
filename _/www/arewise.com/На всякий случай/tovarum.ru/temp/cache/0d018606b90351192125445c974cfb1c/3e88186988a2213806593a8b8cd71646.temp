@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734476605,
+  'data' => 
+  array (
+    'city_id' => '881',
+    'country_id' => '1',
+    'region_id' => '64',
+    'city_name' => 'Екатеринбург',
+    'city_alias' => 'ekaterinburg',
+    'city_count_view' => '219',
+    'city_default' => '1',
+    'city_desc' => '',
+    'city_declination' => 'в Екатеринбурге',
+    'city_lat' => '56.838011',
+    'city_lng' => '60.597474',
+  ),
+) ?>

@@ -1,0 +1,12 @@
+<?php return array (
+  'time' => 1734476605,
+  'data' => 
+  array (
+    'region_id' => '67',
+    'country_id' => '1',
+    'region_name' => 'Смоленская область',
+    'region_alias' => 'smolenskaya-oblast',
+    'region_desc' => '',
+    'region_declination' => 'в Смоленской области',
+  ),
+) ?>

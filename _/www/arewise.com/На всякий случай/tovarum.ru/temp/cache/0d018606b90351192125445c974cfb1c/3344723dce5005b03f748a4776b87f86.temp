@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'city_id' => '643',
+    'country_id' => '1',
+    'region_id' => '48',
+    'city_name' => 'Великий Новгород',
+    'city_alias' => 'velikiy-novgorod',
+    'city_count_view' => '0',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Великом Новгороде',
+    'city_lat' => '58.522857',
+    'city_lng' => '31.269816',
+  ),
+) ?>

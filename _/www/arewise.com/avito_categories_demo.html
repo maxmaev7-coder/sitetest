@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Avito-Style Categories — Demo</title>
+    <link rel="stylesheet" href="templates/css/bootstrap.min.css">
+    <link rel="stylesheet" href="templates/css/line-awesome.min.css">
+    <link rel="stylesheet" href="templates/css/styles.css">
+    <style>
+        body { padding-top: 30px; background: #fafafa; }
+        .demo-container { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 30px; box-shadow: 0 2px 16px rgba(0,0,0,.06); }
+        .demo-title { font-size: 22px; font-weight: 700; margin-bottom: 25px; color: #1a1a1a; }
+        .demo-info { background: #f0f4ff; padding: 12px 18px; border-radius: 8px; margin-bottom: 20px; font-size: 14px; color: #444; }
+        hr.demo-hr { border-top: 2px solid #f2f2f2; margin: 30px 0; }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <div class="demo-title">🏷️ Avito-Style Categories — Превью</div>
+        <div class="demo-info">
+            Это статичная демо-страница для проверки стилей и анимаций. Данные — примерные, как на Avito. Кликайте на стрелки ▼ для раскрытия подкатегорий.
+        </div>
+
+        <div class="catalog-subcategory mb15 mt25">
+            <div class="avito-categories">
+
+                <!-- === L1: Транспорт === -->
+                <div class="avito-cat-l1-wrap">
+                    <div class="avito-cat-l1">
+                        <a href="#">Транспорт</a>
+                        <span class="avito-cat-count">12 458</span>
+                        <span class="avito-cat-toggle"><i class="las la-angle-down"></i></span>
+                    </div>
+                    <div class="avito-cat-l2-list" style="display:none;">
+                        <div class="avito-cat-l2-wrap">
+                            <div class="avito-cat-l2">
+                                <a href="#">Автомобили</a>
+                                <span class="avito-cat-count">8 320</span>
+                                <span class="avito-cat-toggle"><i class="las la-angle-down"></i></span>
+                            </div>
+                            <div class="avito-cat-l3-list" style="display:none;">
+                                <div class="avito-cat-l3"><a href="#">Седаны</a><span class="avito-cat-count">3 100</span></div>
+                                <div class="avito-cat-l3"><a href="#">Внедорожники</a><span class="avito-cat-count">2 450</span></div>
+                                <div class="avito-cat-l3"><a href="#">Хэтчбеки</a><span class="avito-cat-count">1 800</span></div>
+                                <div class="avito-cat-l3"><a href="#">Купе</a><span class="avito-cat-count">970</span></div>
+                            </div>
+                        </div>
+                        <div class="avito-cat-l2-wrap">
+                            <div class="avito-cat-l2">
+                                <a href="#">Мотоциклы</a>
+                                <span class="avito-cat-count">2 130</span>
+                                <span class="avito-cat-toggle"><i class="las la-angle-down"></i></span>
+                            </div>
+                            <div class="avito-cat-l3-list" style="display:none;">
+                                <div class="avito-cat-l3"><a href="#">Спортивные</a><span class="avito-cat-count">890</span></div>
+                                <div class="avito-cat-l3"><a href="#">Круизеры</a><span class="avito-cat-count">650</span></div>
+                                <div class="avito-cat-l3"><a href="#">Эндуро</a><span class="avito-cat-count">590</span></div>
+                            </div>
+                        </div>
+                        <div class="avito-cat-l2-wrap">
+                            <div class="avito-cat-l2">
+                                <a href="#">Запчасти</a>
+                                <span class="avito-cat-count">2 008</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === L1: Недвижимость === -->
+                <div class="avito-cat-l1-wrap">
+                    <div class="avito-cat-l1">
+                        <a href="#">Недвижимость</a>
+                        <span class="avito-cat-count">9 742</span>
+                        <span class="avito-cat-toggle"><i class="las la-angle-down"></i></span>
+                    </div>
+                    <div class="avito-cat-l2-list" style="display:none;">
+                        <div class="avito-cat-l2-wrap">
+                            <div class="avito-cat-l2">
+                                <a href="#">Квартиры</a>
+                                <span class="avito-cat-count">5 120</span>
+                                <span class="avito-cat-toggle"><i class="las la-angle-down"></i></span>
+                            </div>
+                            <div class="avito-cat-l3-list" style="display:none;">
+                                <div class="avito-cat-l3"><a href="#">Продажа</a><span class="avito-cat-count">3 200</span></div>
+                                <div class="avito-cat-l3"><a href="#">Аренда</a><span class="avito-cat-count">1 920</span></div>
+                            </div>
+                        </div>
+                        <div class="avito-cat-l2-wrap">
+                            <div class="avito-cat-l2">
+                                <a href="#">Дома, дачи, коттеджи</a>
+                                <span class="avito-cat-count">2 890</span>
+                            </div>
+                        </div>
+                        <div class="avito-cat-l2-wrap">
+                            <div class="avito-cat-l2">
+                                <a href="#">Коммерческая недвижимость</a>
+                                <span class="avito-cat-count">1 732</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === L1: Электроника (раскрыт для демо) === -->
+                <div class="avito-cat-l1-wrap avito-cat-open">
+                    <div class="avito-cat-l1">
+                        <a href="#">Электроника</a>
+                        <span class="avito-cat-count">18 350</span>
+                        <span class="avito-cat-toggle"><i class="las la-angle-down"></i></span>
+                    </div>
+                    <div class="avito-cat-l2-list">
+                        <div class="avito-cat-l2-wrap avito-cat-open">
+                            <div class="avito-cat-l2">
+                                <a href="#">Телефоны</a>
+                                <span class="avito-cat-count">7 800</span>
+                                <span class="avito-cat-toggle"><i class="las la-angle-down"></i></span>
+                            </div>
+                            <div class="avito-cat-l3-list">
+                                <div class="avito-cat-l3 avito-cat-active"><a href="#">iPhone</a><span class="avito-cat-count">3 200</span></div>
+                                <div class="avito-cat-l3"><a href="#">Samsung</a><span class="avito-cat-count">2 100</span></div>
+                                <div class="avito-cat-l3"><a href="#">Xiaomi</a><span class="avito-cat-count">1 500</span></div>
+                                <div class="avito-cat-l3"><a href="#">Аксессуары</a><span class="avito-cat-count">1 000</span></div>
+                            </div>
+                        </div>
+                        <div class="avito-cat-l2-wrap">
+                            <div class="avito-cat-l2">
+                                <a href="#">Ноутбуки</a>
+                                <span class="avito-cat-count">4 250</span>
+                                <span class="avito-cat-toggle"><i class="las la-angle-down"></i></span>
+                            </div>
+                            <div class="avito-cat-l3-list" style="display:none;">
+                                <div class="avito-cat-l3"><a href="#">Apple MacBook</a><span class="avito-cat-count">1 800</span></div>
+                                <div class="avito-cat-l3"><a href="#">ASUS</a><span class="avito-cat-count">900</span></div>
+                                <div class="avito-cat-l3"><a href="#">Lenovo</a><span class="avito-cat-count">850</span></div>
+                                <div class="avito-cat-l3"><a href="#">HP</a><span class="avito-cat-count">700</span></div>
+                            </div>
+                        </div>
+                        <div class="avito-cat-l2-wrap">
+                            <div class="avito-cat-l2">
+                                <a href="#">Аудио и видео</a>
+                                <span class="avito-cat-count">3 400</span>
+                            </div>
+                        </div>
+                        <div class="avito-cat-l2-wrap">
+                            <div class="avito-cat-l2">
+                                <a href="#">Игры и приставки</a>
+                                <span class="avito-cat-count">2 900</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === L1: Работа === -->
+                <div class="avito-cat-l1-wrap">
+                    <div class="avito-cat-l1">
+                        <a href="#">Работа</a>
+                        <span class="avito-cat-count">6 210</span>
+                        <span class="avito-cat-toggle"><i class="las la-angle-down"></i></span>
+                    </div>
+                    <div class="avito-cat-l2-list" style="display:none;">
+                        <div class="avito-cat-l2-wrap">
+                            <div class="avito-cat-l2"><a href="#">Вакансии</a><span class="avito-cat-count">4 500</span></div>
+                        </div>
+                        <div class="avito-cat-l2-wrap">
+                            <div class="avito-cat-l2"><a href="#">Резюме</a><span class="avito-cat-count">1 710</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === L1: Услуги === -->
+                <div class="avito-cat-l1-wrap">
+                    <div class="avito-cat-l1">
+                        <a href="#">Услуги</a>
+                        <span class="avito-cat-count">4 870</span>
+                        <span class="avito-cat-toggle"><i class="las la-angle-down"></i></span>
+                    </div>
+                    <div class="avito-cat-l2-list" style="display:none;">
+                        <div class="avito-cat-l2-wrap">
+                            <div class="avito-cat-l2"><a href="#">Ремонт и строительство</a><span class="avito-cat-count">1 900</span></div>
+                        </div>
+                        <div class="avito-cat-l2-wrap">
+                            <div class="avito-cat-l2"><a href="#">Красота и здоровье</a><span class="avito-cat-count">1 350</span></div>
+                        </div>
+                        <div class="avito-cat-l2-wrap">
+                            <div class="avito-cat-l2"><a href="#">Обучение и курсы</a><span class="avito-cat-count">1 620</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === L1: Для дома и дачи === -->
+                <div class="avito-cat-l1-wrap">
+                    <div class="avito-cat-l1">
+                        <a href="#">Для дома и дачи</a>
+                        <span class="avito-cat-count">11 500</span>
+                        <span class="avito-cat-toggle"><i class="las la-angle-down"></i></span>
+                    </div>
+                    <div class="avito-cat-l2-list" style="display:none;">
+                        <div class="avito-cat-l2-wrap">
+                            <div class="avito-cat-l2">
+                                <a href="#">Мебель</a>
+                                <span class="avito-cat-count">4 200</span>
+                                <span class="avito-cat-toggle"><i class="las la-angle-down"></i></span>
+                            </div>
+                            <div class="avito-cat-l3-list" style="display:none;">
+                                <div class="avito-cat-l3"><a href="#">Кухонная мебель</a><span class="avito-cat-count">1 200</span></div>
+                                <div class="avito-cat-l3"><a href="#">Шкафы и стеллажи</a><span class="avito-cat-count">1 100</span></div>
+                                <div class="avito-cat-l3"><a href="#">Диваны и кресла</a><span class="avito-cat-count">1 900</span></div>
+                            </div>
+                        </div>
+                        <div class="avito-cat-l2-wrap">
+                            <div class="avito-cat-l2"><a href="#">Бытовая техника</a><span class="avito-cat-count">3 800</span></div>
+                        </div>
+                        <div class="avito-cat-l2-wrap">
+                            <div class="avito-cat-l2"><a href="#">Ремонт и стройка</a><span class="avito-cat-count">3 500</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="demo-hr">
+        <p style="color: #999; font-size: 13px; text-align: center;">
+            Демо-страница Avito-Style Categories для tovarum.ru &bull; Стили загружены из <code>templates/css/styles.css</code>
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        /* Avito-style category tree: expand/collapse */
+        $(document).on('click', '.avito-cat-toggle', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var wrap = $(this).closest('.avito-cat-l1-wrap, .avito-cat-l2-wrap');
+            var list = wrap.children('.avito-cat-l2-list, .avito-cat-l3-list');
+            wrap.toggleClass('avito-cat-open');
+            list.slideToggle(250);
+        });
+    });
+    </script>
+</body>
+</html>

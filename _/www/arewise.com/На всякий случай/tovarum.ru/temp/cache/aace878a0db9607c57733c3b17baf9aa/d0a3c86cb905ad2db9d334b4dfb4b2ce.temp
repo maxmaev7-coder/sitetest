@@ -1,0 +1,12 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'region_id' => '39',
+    'country_id' => '1',
+    'region_name' => 'Липецкая область',
+    'region_alias' => 'lipeckaya-oblast',
+    'region_desc' => '',
+    'region_declination' => 'в Липецкой области',
+  ),
+) ?>

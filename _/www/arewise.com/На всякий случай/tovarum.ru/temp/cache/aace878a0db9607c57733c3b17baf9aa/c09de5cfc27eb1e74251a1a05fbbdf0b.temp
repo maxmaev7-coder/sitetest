@@ -1,0 +1,12 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'region_id' => '52',
+    'country_id' => '1',
+    'region_name' => 'Орловская область',
+    'region_alias' => 'orlovskaya-oblast',
+    'region_desc' => '',
+    'region_declination' => 'в Орловской области',
+  ),
+) ?>

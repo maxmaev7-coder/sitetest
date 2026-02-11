@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'city_id' => '956',
+    'country_id' => '1',
+    'region_id' => '70',
+    'city_name' => 'Казань',
+    'city_alias' => 'kazan',
+    'city_count_view' => '175',
+    'city_default' => '1',
+    'city_desc' => '',
+    'city_declination' => 'в Казани',
+    'city_lat' => '55.796127',
+    'city_lng' => '49.106414',
+  ),
+) ?>

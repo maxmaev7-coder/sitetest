@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734476605,
+  'data' => 
+  array (
+    'country_id' => '4',
+    'country_name' => 'Беларусь',
+    'country_status' => '0',
+    'country_alias' => 'belarus',
+    'country_lat' => '53.9',
+    'country_lng' => '27.5667',
+    'country_desc' => '',
+    'country_format_phone' => '+375(__) ___ __ __',
+    'country_code_phone' => 'BY',
+    'country_image' => '0d019bdf1fe032cd3e19fe29ed7a8ef4.png',
+    'country_declination' => 'в Беларуси',
+  ),
+) ?>

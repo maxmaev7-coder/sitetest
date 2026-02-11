@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'city_id' => '678',
+    'country_id' => '1',
+    'region_id' => '52',
+    'city_name' => 'Орёл',
+    'city_alias' => 'orel',
+    'city_count_view' => '0',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Орле',
+    'city_lat' => '52.970756',
+    'city_lng' => '36.064358',
+  ),
+) ?>

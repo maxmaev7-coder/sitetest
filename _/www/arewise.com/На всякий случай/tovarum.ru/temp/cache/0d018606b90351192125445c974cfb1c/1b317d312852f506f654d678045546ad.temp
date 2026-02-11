@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734476605,
+  'data' => 
+  array (
+    'city_id' => '1788',
+    'country_id' => '4',
+    'region_id' => '136',
+    'city_name' => 'Минск',
+    'city_alias' => 'minsk',
+    'city_count_view' => '38',
+    'city_default' => '1',
+    'city_desc' => '',
+    'city_declination' => '',
+    'city_lat' => '53.902284',
+    'city_lng' => '27.561831',
+  ),
+) ?>

@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734476605,
+  'data' => 
+  array (
+    'city_id' => '323',
+    'country_id' => '1',
+    'region_id' => '29',
+    'city_name' => 'Новокузнецк',
+    'city_alias' => 'novokuzneck',
+    'city_count_view' => '1',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Новокузнецке',
+    'city_lat' => '53.757553',
+    'city_lng' => '87.136053',
+  ),
+) ?>

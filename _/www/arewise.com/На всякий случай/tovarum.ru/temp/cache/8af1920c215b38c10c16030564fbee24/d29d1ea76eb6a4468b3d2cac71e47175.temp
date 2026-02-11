@@ -1,0 +1,49 @@
+<?php return array (
+  'time' => 1734467369,
+  'data' => 
+  array (
+    'id_parent' => 
+    array (
+      0 => 
+      array (
+        264 => 
+        array (
+          'ads_filters_id' => '264',
+          'ads_filters_name' => 'Тип',
+          'ads_filters_visible' => '1',
+          'ads_filters_type' => 'select',
+          'ads_filters_position' => '254',
+          'ads_filters_podcat' => '1',
+          'ads_filters_id_parent' => '0',
+          'ads_filters_alias' => 'tip',
+          'ads_filters_required' => '1',
+        ),
+        265 => 
+        array (
+          'ads_filters_id' => '265',
+          'ads_filters_name' => 'Пол',
+          'ads_filters_visible' => '1',
+          'ads_filters_type' => 'select',
+          'ads_filters_position' => '255',
+          'ads_filters_podcat' => '1',
+          'ads_filters_id_parent' => '0',
+          'ads_filters_alias' => 'pol',
+          'ads_filters_required' => '1',
+        ),
+      ),
+    ),
+    'id' => 
+    array (
+      264 => 
+      array (
+        'ads_filters_name' => 'Тип',
+        'ads_filters_type' => 'select',
+      ),
+      265 => 
+      array (
+        'ads_filters_name' => 'Пол',
+        'ads_filters_type' => 'select',
+      ),
+    ),
+  ),
+) ?>

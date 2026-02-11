@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734474126,
+  'data' => 
+  array (
+    'city_id' => '526',
+    'country_id' => '1',
+    'region_id' => '44',
+    'city_name' => 'Химки',
+    'city_alias' => 'himki',
+    'city_count_view' => '0',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Химках',
+    'city_lat' => '55.889361',
+    'city_lng' => '37.444853',
+  ),
+) ?>

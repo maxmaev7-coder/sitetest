@@ -1,0 +1,12 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'region_id' => '48',
+    'country_id' => '1',
+    'region_name' => 'Новгородская область',
+    'region_alias' => 'novgorodskaya-oblast',
+    'region_desc' => '',
+    'region_declination' => 'в Новгородской области',
+  ),
+) ?>

@@ -1,0 +1,12 @@
+<?php return array (
+  'time' => 1734476605,
+  'data' => 
+  array (
+    'region_id' => '136',
+    'country_id' => '4',
+    'region_name' => 'Минская область',
+    'region_alias' => 'minskaya-oblast',
+    'region_desc' => '',
+    'region_declination' => '',
+  ),
+) ?>

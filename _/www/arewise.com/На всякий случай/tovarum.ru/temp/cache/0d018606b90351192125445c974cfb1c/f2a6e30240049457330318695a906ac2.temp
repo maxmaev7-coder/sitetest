@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734476605,
+  'data' => 
+  array (
+    'city_id' => '389',
+    'country_id' => '1',
+    'region_id' => '33',
+    'city_name' => 'Краснодар',
+    'city_alias' => 'krasnodar',
+    'city_count_view' => '213',
+    'city_default' => '1',
+    'city_desc' => '',
+    'city_declination' => 'в Краснодаре',
+    'city_lat' => '45.03547',
+    'city_lng' => '38.975313',
+  ),
+) ?>

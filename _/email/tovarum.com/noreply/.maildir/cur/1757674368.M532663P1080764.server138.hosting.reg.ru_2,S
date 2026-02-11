@@ -1,0 +1,22 @@
+Return-path: <noreply@tovarum.com>
+Envelope-to: noreply@tovarum.com
+Delivery-date: Fri, 12 Sep 2025 13:52:48 +0300
+Received: from u2946871
+	by server138.hosting.reg.ru with local  
+	(envelope-from <noreply@tovarum.com>)
+	id 1ux1Oa-00000004X9b-2AiL
+	for noreply@tovarum.com;
+	Fri, 12 Sep 2025 13:52:48 +0300
+To: noreply@tovarum.com
+Subject: =?utf-8?B?0KLQtdGB0YLQvtCy0L7QtSDRgdC+0L7QsdGJ0LXQvdC40LU=?=
+Date: Fri, 12 Sep 2025 13:52:48 +0300
+From: Tovarum <noreply@tovarum.com>
+Reply-To: Tovarum <noreply@tovarum.com>
+Message-ID: <cVHZj7Vtz51oavLaF4BxPPKYU3WocdrJOsYU3vBNfw@tovarum.com>
+X-Mailer: PHPMailer 6.9.3
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+Тестовое сообщение
+

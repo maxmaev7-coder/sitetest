@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'city_id' => '229',
+    'country_id' => '1',
+    'region_id' => '21',
+    'city_name' => 'Иркутск',
+    'city_alias' => 'irkutsk',
+    'city_count_view' => '267',
+    'city_default' => '1',
+    'city_desc' => '',
+    'city_declination' => 'в Иркутске',
+    'city_lat' => '52.289588',
+    'city_lng' => '104.280606',
+  ),
+) ?>

@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'city_id' => '368',
+    'country_id' => '1',
+    'region_id' => '32',
+    'city_name' => 'Кострома',
+    'city_alias' => 'kostroma',
+    'city_count_view' => '0',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Костроме',
+    'city_lat' => '57.767918',
+    'city_lng' => '40.926894',
+  ),
+) ?>

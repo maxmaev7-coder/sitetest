@@ -1,0 +1,6 @@
+#!/bin/sh
+PHP_INI_SCAN_DIR='/var/www/u2946871/data/php-bin-php84/tovarum.com:'
+PHPRC='/var/www/u2946871/data/php-bin-php84'
+export PHP_INI_SCAN_DIR
+export PHPRC
+exec /opt/php/8.4/bin/php-cgi

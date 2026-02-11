@@ -1,0 +1,23 @@
+
+    Options -Indexes
+
+    <FilesMatch "config\.php">
+      Order allow,deny
+      Deny from all
+    </FilesMatch>
+
+    <FilesMatch ".(htaccess|temp|sql)$">
+     Order Allow,Deny
+     Deny from all
+     </FilesMatch>
+
+    <IfModule mod_php5.c>
+      php_flag magic_quotes_gpc off
+      php_flag magic_quotes_runtime off
+      php_flag register_globals off
+    </IfModule>
+
+    RewriteEngine On 
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule .* index.php [L]

@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'city_id' => '567',
+    'country_id' => '1',
+    'region_id' => '44',
+    'city_name' => 'Клин',
+    'city_alias' => 'klin',
+    'city_count_view' => '2',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Клине',
+    'city_lat' => '56.331588',
+    'city_lng' => '36.728725',
+  ),
+) ?>

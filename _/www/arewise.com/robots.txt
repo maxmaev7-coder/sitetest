@@ -1,0 +1,6 @@
+User-agent: *
+Host: https://tovarum.ru
+Sitemap: https://tovarum.ru/sitemap.xml
+Disallow: /media/
+Disallow: /temp/
+Disallow: /templates/

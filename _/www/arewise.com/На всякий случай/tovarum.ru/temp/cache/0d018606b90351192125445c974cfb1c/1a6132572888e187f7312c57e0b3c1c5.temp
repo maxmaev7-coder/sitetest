@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734474126,
+  'data' => 
+  array (
+    'city_id' => '286',
+    'country_id' => '1',
+    'region_id' => '25',
+    'city_name' => 'Калуга',
+    'city_alias' => 'kaluga',
+    'city_count_view' => '1',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Калуге',
+    'city_lat' => '54.513845',
+    'city_lng' => '36.261224',
+  ),
+) ?>

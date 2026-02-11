@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'city_id' => '1134',
+    'country_id' => '1',
+    'region_id' => '44',
+    'city_name' => 'Москва',
+    'city_alias' => 'moskva',
+    'city_count_view' => '2200',
+    'city_default' => '1',
+    'city_desc' => '',
+    'city_declination' => 'в Москве',
+    'city_lat' => '55.755864',
+    'city_lng' => '37.617698',
+  ),
+) ?>

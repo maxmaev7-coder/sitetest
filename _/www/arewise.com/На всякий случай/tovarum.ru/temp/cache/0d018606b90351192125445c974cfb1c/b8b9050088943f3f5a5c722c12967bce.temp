@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'city_id' => '446',
+    'country_id' => '1',
+    'region_id' => '36',
+    'city_name' => 'Далматово',
+    'city_alias' => 'dalmatovo',
+    'city_count_view' => '0',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Далматово',
+    'city_lat' => '56.258613',
+    'city_lng' => '62.93932',
+  ),
+) ?>

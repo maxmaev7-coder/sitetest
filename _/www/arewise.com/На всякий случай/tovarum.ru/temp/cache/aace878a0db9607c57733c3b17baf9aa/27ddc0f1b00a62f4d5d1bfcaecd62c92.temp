@@ -1,0 +1,12 @@
+<?php return array (
+  'time' => 1734476605,
+  'data' => 
+  array (
+    'region_id' => '64',
+    'country_id' => '1',
+    'region_name' => 'Свердловская область',
+    'region_alias' => 'sverdlovskaya-oblast',
+    'region_desc' => '',
+    'region_declination' => 'в Свердловской области',
+  ),
+) ?>

@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734476605,
+  'data' => 
+  array (
+    'city_id' => '564',
+    'country_id' => '1',
+    'region_id' => '44',
+    'city_name' => 'Коломна',
+    'city_alias' => 'kolomna',
+    'city_count_view' => '1',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Коломне',
+    'city_lat' => '55.103034',
+    'city_lng' => '38.752809',
+  ),
+) ?>

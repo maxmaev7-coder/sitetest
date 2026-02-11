@@ -1,0 +1,12 @@
+<?php return array (
+  'time' => 1734476605,
+  'data' => 
+  array (
+    'region_id' => '33',
+    'country_id' => '1',
+    'region_name' => 'Краснодарский Край',
+    'region_alias' => 'krasnodarskiy-kray',
+    'region_desc' => '',
+    'region_declination' => 'в Краснодарском крае',
+  ),
+) ?>

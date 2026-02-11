@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'city_id' => '222',
+    'country_id' => '1',
+    'region_id' => '21',
+    'city_name' => 'Слюдянка',
+    'city_alias' => 'slyudyanka',
+    'city_count_view' => '0',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Слюдянке',
+    'city_lat' => '51.656501',
+    'city_lng' => '103.718845',
+  ),
+) ?>

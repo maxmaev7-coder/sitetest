@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734474124,
+  'data' => 
+  array (
+    'city_id' => '818',
+    'country_id' => '1',
+    'region_id' => '61',
+    'city_name' => 'Балаково',
+    'city_alias' => 'balakovo',
+    'city_count_view' => '0',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Балаково',
+    'city_lat' => '52.01843',
+    'city_lng' => '47.819676',
+  ),
+) ?>

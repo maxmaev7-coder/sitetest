@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734476605,
+  'data' => 
+  array (
+    'city_id' => '688',
+    'country_id' => '1',
+    'region_id' => '53',
+    'city_name' => 'Пенза',
+    'city_alias' => 'penza',
+    'city_count_view' => '356',
+    'city_default' => '1',
+    'city_desc' => '',
+    'city_declination' => 'в Пензе',
+    'city_lat' => '53.195042',
+    'city_lng' => '45.018316',
+  ),
+) ?>

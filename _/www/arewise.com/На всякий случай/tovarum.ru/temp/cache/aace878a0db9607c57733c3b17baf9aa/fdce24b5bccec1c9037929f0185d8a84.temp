@@ -1,0 +1,12 @@
+<?php return array (
+  'time' => 1734474126,
+  'data' => 
+  array (
+    'region_id' => '25',
+    'country_id' => '1',
+    'region_name' => 'Калужская область',
+    'region_alias' => 'kaluzhskaya-oblast',
+    'region_desc' => '',
+    'region_declination' => 'в Калужской области',
+  ),
+) ?>

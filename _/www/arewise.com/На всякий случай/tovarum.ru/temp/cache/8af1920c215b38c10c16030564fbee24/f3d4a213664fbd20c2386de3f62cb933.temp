@@ -1,0 +1,83 @@
+<?php return array (
+  'time' => 1734475112,
+  'data' => 
+  array (
+    'id_parent' => 
+    array (
+      0 => 
+      array (
+        35 => 
+        array (
+          'ads_filters_id' => '35',
+          'ads_filters_name' => 'Требуемый опыт',
+          'ads_filters_visible' => '1',
+          'ads_filters_type' => 'select',
+          'ads_filters_position' => '29',
+          'ads_filters_podcat' => '1',
+          'ads_filters_id_parent' => '0',
+          'ads_filters_alias' => 'trebuemiy-opit',
+          'ads_filters_required' => '0',
+        ),
+        36 => 
+        array (
+          'ads_filters_id' => '36',
+          'ads_filters_name' => 'Тип занятости',
+          'ads_filters_visible' => '1',
+          'ads_filters_type' => 'select',
+          'ads_filters_position' => '30',
+          'ads_filters_podcat' => '1',
+          'ads_filters_id_parent' => '0',
+          'ads_filters_alias' => 'tip-zanyatosti',
+          'ads_filters_required' => '0',
+        ),
+        37 => 
+        array (
+          'ads_filters_id' => '37',
+          'ads_filters_name' => 'Характер работы',
+          'ads_filters_visible' => '1',
+          'ads_filters_type' => 'select',
+          'ads_filters_position' => '31',
+          'ads_filters_podcat' => '1',
+          'ads_filters_id_parent' => '0',
+          'ads_filters_alias' => 'harakter-raboti',
+          'ads_filters_required' => '0',
+        ),
+        38 => 
+        array (
+          'ads_filters_id' => '38',
+          'ads_filters_name' => 'Другие условия',
+          'ads_filters_visible' => '1',
+          'ads_filters_type' => 'select',
+          'ads_filters_position' => '32',
+          'ads_filters_podcat' => '1',
+          'ads_filters_id_parent' => '0',
+          'ads_filters_alias' => 'drugie-usloviya',
+          'ads_filters_required' => '0',
+        ),
+      ),
+    ),
+    'id' => 
+    array (
+      35 => 
+      array (
+        'ads_filters_name' => 'Требуемый опыт',
+        'ads_filters_type' => 'select',
+      ),
+      36 => 
+      array (
+        'ads_filters_name' => 'Тип занятости',
+        'ads_filters_type' => 'select',
+      ),
+      37 => 
+      array (
+        'ads_filters_name' => 'Характер работы',
+        'ads_filters_type' => 'select',
+      ),
+      38 => 
+      array (
+        'ads_filters_name' => 'Другие условия',
+        'ads_filters_type' => 'select',
+      ),
+    ),
+  ),
+) ?>

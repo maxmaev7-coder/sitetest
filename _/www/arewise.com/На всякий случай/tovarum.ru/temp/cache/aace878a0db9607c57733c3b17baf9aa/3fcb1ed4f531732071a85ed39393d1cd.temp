@@ -1,0 +1,12 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'region_id' => '12',
+    'country_id' => '1',
+    'region_name' => 'Владимирская область',
+    'region_alias' => 'vladimirskaya-oblast',
+    'region_desc' => '',
+    'region_declination' => 'во Владимирской области',
+  ),
+) ?>

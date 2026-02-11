@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'city_id' => '547',
+    'country_id' => '1',
+    'region_id' => '44',
+    'city_name' => 'Мытищи',
+    'city_alias' => 'mytishchi',
+    'city_count_view' => '0',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Мытищи',
+    'city_lat' => '55.909968',
+    'city_lng' => '37.736743',
+  ),
+) ?>

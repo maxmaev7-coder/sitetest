@@ -1,0 +1,12 @@
+<?php return array (
+  'time' => 1734476605,
+  'data' => 
+  array (
+    'region_id' => '53',
+    'country_id' => '1',
+    'region_name' => 'Пензенская область',
+    'region_alias' => 'penzenskaya-oblast',
+    'region_desc' => '',
+    'region_declination' => 'в Пензенской области',
+  ),
+) ?>

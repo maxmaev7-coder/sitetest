@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'city_id' => '493',
+    'country_id' => '1',
+    'region_id' => '39',
+    'city_name' => 'Липецк',
+    'city_alias' => 'lipeck',
+    'city_count_view' => '1',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Липецке',
+    'city_lat' => '52.608826',
+    'city_lng' => '39.599229',
+  ),
+) ?>

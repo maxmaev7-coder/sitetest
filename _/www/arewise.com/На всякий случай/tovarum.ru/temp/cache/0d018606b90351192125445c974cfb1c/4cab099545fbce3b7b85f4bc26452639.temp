@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'city_id' => '1002',
+    'country_id' => '1',
+    'region_id' => '73',
+    'city_name' => 'Тула',
+    'city_alias' => 'tula',
+    'city_count_view' => '5',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Туле',
+    'city_lat' => '54.193122',
+    'city_lng' => '37.617348',
+  ),
+) ?>

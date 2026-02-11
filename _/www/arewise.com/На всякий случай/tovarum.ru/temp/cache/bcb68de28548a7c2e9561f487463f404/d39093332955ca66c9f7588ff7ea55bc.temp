@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'country_id' => '1',
+    'country_name' => 'Россия',
+    'country_status' => '1',
+    'country_alias' => 'russia',
+    'country_lat' => '55.7522',
+    'country_lng' => '37.6156',
+    'country_desc' => '',
+    'country_format_phone' => '+7(___) ___ ____',
+    'country_code_phone' => 'RU',
+    'country_image' => '8757589f49ab1c43109c833c9b7092a5.png',
+    'country_declination' => 'в России',
+  ),
+) ?>

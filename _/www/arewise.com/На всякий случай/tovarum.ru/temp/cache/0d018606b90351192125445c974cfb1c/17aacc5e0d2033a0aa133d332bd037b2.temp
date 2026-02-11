@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'city_id' => '544',
+    'country_id' => '1',
+    'region_id' => '44',
+    'city_name' => 'Одинцово',
+    'city_alias' => 'odincovo',
+    'city_count_view' => '0',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Одинцово',
+    'city_lat' => '55.679138',
+    'city_lng' => '37.263663',
+  ),
+) ?>

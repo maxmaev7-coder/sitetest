@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'city_id' => '575',
+    'country_id' => '1',
+    'region_id' => '44',
+    'city_name' => 'Домодедово',
+    'city_alias' => 'domodedovo',
+    'city_count_view' => '2',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Домодедово',
+    'city_lat' => '55.437174',
+    'city_lng' => '37.768004',
+  ),
+) ?>

@@ -1,0 +1,12 @@
+<?php return array (
+  'time' => 1734473934,
+  'data' => 
+  array (
+    'region_id' => '44',
+    'country_id' => '1',
+    'region_name' => 'Московская область',
+    'region_alias' => 'moskovskaya-oblast',
+    'region_desc' => '',
+    'region_declination' => 'в Московской области',
+  ),
+) ?>

@@ -1,0 +1,12 @@
+<?php return array (
+  'time' => 1734474124,
+  'data' => 
+  array (
+    'region_id' => '61',
+    'country_id' => '1',
+    'region_name' => 'Саратовская область',
+    'region_alias' => 'saratovskaya-oblast',
+    'region_desc' => '',
+    'region_declination' => 'в Саратовской области',
+  ),
+) ?>

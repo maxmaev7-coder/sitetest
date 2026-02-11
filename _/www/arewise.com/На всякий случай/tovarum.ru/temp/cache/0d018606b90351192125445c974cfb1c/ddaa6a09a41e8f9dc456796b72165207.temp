@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734468979,
+  'data' => 
+  array (
+    'city_id' => '532',
+    'country_id' => '1',
+    'region_id' => '44',
+    'city_name' => 'Серпухов',
+    'city_alias' => 'serpuhov',
+    'city_count_view' => '53',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Серпухове',
+    'city_lat' => '54.913681',
+    'city_lng' => '37.416601',
+  ),
+) ?>

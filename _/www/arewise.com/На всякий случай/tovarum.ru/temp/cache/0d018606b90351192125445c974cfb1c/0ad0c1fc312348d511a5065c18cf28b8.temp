@@ -1,0 +1,17 @@
+<?php return array (
+  'time' => 1734470310,
+  'data' => 
+  array (
+    'city_id' => '560',
+    'country_id' => '1',
+    'region_id' => '44',
+    'city_name' => 'Красногорск',
+    'city_alias' => 'krasnogorsk',
+    'city_count_view' => '0',
+    'city_default' => '0',
+    'city_desc' => '',
+    'city_declination' => 'в Красногорске',
+    'city_lat' => '55.831003',
+    'city_lng' => '37.330399',
+  ),
+) ?>
